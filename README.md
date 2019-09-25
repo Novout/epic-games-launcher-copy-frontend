@@ -7,7 +7,7 @@
 To install and start dev build:
 
 ```bash
-git clone https://github.com/Novout/epic-games-launcher.git
+git clone https://github.com/Novout/epic-games-launcher-copy.git
 yarn install && yarn build && yarn start
 ```
 Available commands:
