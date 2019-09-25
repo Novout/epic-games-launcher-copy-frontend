@@ -1,5 +1,7 @@
-# Epic Games Launcher
+# Epic Games Launcher Copy
+![](https://img.shields.io/badge/Electron-6-green) ![](https://img.shields.io/badge/React-16.9-blue) ![](https://img.shields.io/badge/NextJS-9-purple) ![](https://img.shields.io/badge/Typescript-3.6-brightgreen)
 
+![](https://i.imgur.com/HE6XAHI.png)
 ## How to use
 
 To install and start dev build:
@@ -25,3 +27,6 @@ Available commands:
 | Next.js    | `/renderer`              | `/renderer`         |
 | Electron   | `/electron-src`          | `/main`             |
 | Production |                          | `/dist`             |
+
+ > CREDITS: Total Credits to Epic Games
+
