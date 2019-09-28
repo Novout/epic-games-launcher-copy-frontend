@@ -28,5 +28,15 @@ Available commands:
 | Electron   | `/electron-src`          | `/main`             |
 | Production |                          | `/dist`             |
 
+## Content
+
+- [x] Login
+- [x] Register
+- [x] Configuration
+- [x] Mars
+- [ ] Store
+- [ ] Icons
+- [ ] Fonts
+
  > CREDITS: Total Credits to Epic Games
 
