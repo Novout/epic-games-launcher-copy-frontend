@@ -33,7 +33,6 @@ Available commands:
 - [x] Login
 - [x] Register
 - [x] Configuration
-- [x] Mars
 - [ ] Store
 - [ ] Icons
 - [ ] Fonts
