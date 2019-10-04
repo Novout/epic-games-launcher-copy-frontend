@@ -1,5 +1,5 @@
 import * as React from 'react';
-//import Link from 'next/link';
+import Link from 'next/link';
 //import Head from 'next/head';
 import styled from '@emotion/styled';
 import EpicGamesLogo from '../img/epiclogo.png';
@@ -13,30 +13,167 @@ const Sidebar: React.FunctionComponent = ({
         <ContentSideText>Epic Games</ContentSideText>
       </ContentSide>
       <ContentHome>
-        <Logo src={HomeLogo} alt="Epic Logo" width="30px"></Logo>
+        <Logo src={HomeLogo} alt="Home" width="30px"></Logo>
         <ContentHomeText>Início</ContentHomeText>
       </ContentHome>
+      <ContentStore>
+        <Logo src={HomeLogo} alt="Loja" width="30px"></Logo>
+        <ContentStoreText>Loja</ContentStoreText>
+      </ContentStore>
+      <ContentLibrary>
+        <Logo src={HomeLogo} alt="Biblioteca" width="30px"></Logo>
+        <ContentLibraryText>Biblioteca</ContentLibraryText>
+      </ContentLibrary>
+      <ContentFriend>
+        <Logo src={HomeLogo} alt="Amigos" width="30px"></Logo>
+        <ContentFriendText>Amigos</ContentFriendText>
+      </ContentFriend>
+      <ContentUE4>
+        <Logo src={HomeLogo} alt="Unreal Engine 4" width="30px"></Logo>
+        <ContentUE4Text>Unreal Engine</ContentUE4Text>
+      </ContentUE4>
+      <ContentDownloads>
+        <Logo src={HomeLogo} alt="Downloads" width="30px"></Logo>
+        <ContentDownloadsText>Downloads</ContentDownloadsText>
+      </ContentDownloads>
+      <Link href="/configuracoes">
+        <ContentConfiguracoes>
+          <Logo src={HomeLogo} alt="Downloads" width="30px"></Logo>
+          <ContentConfiguracoesText>Configuracoes</ContentConfiguracoesText>
+        </ContentConfiguracoes>
+      </Link>
+      <ContentUser>
+        <Logo src={HomeLogo} alt="Downloads" width="30px"></Logo>
+        <ContentUserText>Perfil</ContentUserText>
+      </ContentUser>
     </Side>
   );
+
+const ContentUser: any = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-contet: flex-start;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
+const ContentUserText: any = styled.span`
+  color: #FFF;
+  margin-top: 7px;
+  font-size: 0.9em;
+  margin-left: 12px;
+`;
+
+
+const ContentConfiguracoes: any = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-contet: flex-start;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
+const ContentConfiguracoesText: any = styled.span`
+  color: #FFF;
+  margin-top: 7px;
+  font-size: 0.9em;
+  margin-left: 12px;
+`;
+
+const ContentUE4: any = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-contet: flex-start;
+  margin-bottom: 242px;
+  cursor: pointer;
+`;
+
+const ContentUE4Text: any = styled.span`
+  color: #FFF;
+  margin-top: 7px;
+  font-size: 0.9em;
+  margin-left: 12px;
+`;
+
+const ContentDownloads: any = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-contet: flex-start;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
+const ContentDownloadsText: any = styled.span`
+  color: #FFF;
+  margin-top: 7px;
+  font-size: 0.9em;
+  margin-left: 12px;
+`;
+
+const ContentFriend: any = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-contet: flex-start;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
+const ContentFriendText: any = styled.span`
+  color: #FFF;
+  margin-top: 7px;
+  font-size: 0.9em;
+  margin-left: 12px;
+`;
+
+const ContentLibrary: any = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-contet: flex-start;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
+const ContentLibraryText: any = styled.span`
+  color: #FFF;
+  margin-top: 7px;
+  font-size: 0.9em;
+  margin-left: 12px;
+`;
+
+const ContentStore: any = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-contet: flex-start;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
+const ContentStoreText: any = styled.span`
+  color: #FFF;
+  margin-top: 7px;
+  font-size: 0.9em;
+  margin-left: 12px;
+`;
 
 const ContentHome: any = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-contet: flex-start;
   margin-bottom: 30px;
+  cursor: pointer;
 `;
 
 const ContentHomeText: any = styled.span`
   color: #FFF;
   margin-top: 7px;
-  font-size: 0.95em;
+  font-size: 0.9em;
   margin-left: 12px;
 `;
 
 const ContentSideText: any = styled.span`
   color: #FFF;
   margin-top: 10px;
-  font-size: 0.95em;
+  font-size: 0.9em;
 `;
 
 const Logo: any = styled.img`
@@ -49,6 +186,7 @@ const ContentSide: any = styled.div`
   flex-flow: row wrap;
   justify-contet: flex-start;
   margin-bottom: 30px;
+  cursor: pointer;
 `;
 
 const Side = styled.div`
