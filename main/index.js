@@ -14,8 +14,8 @@ const electron_next_1 = __importDefault(require("electron-next"));
 electron_1.app.on('ready', async () => {
     await electron_next_1.default('./renderer');
     const mainWindow = new electron_1.BrowserWindow({
-        width: 1100,
-        height: 800,
+        width: 850,
+        height: 950,
         webPreferences: {
             nodeIntegration: false,
             preload: path_1.join(__dirname, 'preload.js'),
@@ -28,7 +28,6 @@ electron_1.app.on('ready', async () => {
             protocol: 'file:',
             slashes: true,
         });
-    mainWindow.setResizable(false);
     mainWindow.loadURL(url);
 });
 // Quit the app once all windows are closed

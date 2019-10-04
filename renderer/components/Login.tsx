@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head';
-//import Link from 'next/link'
+import Link from 'next/link'
 import styled from '@emotion/styled';
 import EpicGamesLogo from '../img/epiclogo.png';
 import FacebookLogo from '../img/facebook.png';
@@ -8,6 +8,7 @@ import GoogleLogo from '../img/google.png';
 import PlaystationLogo from '../img/playstation.png';
 import XboxLogo from '../img/xbox.png';
 import NintendoLogo from '../img/nintendo.png';
+import EngrenagemLogo from '../img/engrenagem.png';
 
 const Login: React.FunctionComponent = ({
   children
@@ -50,8 +51,29 @@ const Login: React.FunctionComponent = ({
         </SocialContainer>
         {children}
       </ContainerLogin>
+      <Link href="/configuracoes">
+        <Configuracoes>
+          <Engrenagem src={EngrenagemLogo} alt="Configurações" width="20px"></Engrenagem>
+        </Configuracoes>
+      </Link>
     </Container>
   );
+
+const Configuracoes: any = styled.div`
+  position: absolute;
+  top: 95%;
+  left: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  color: white;
+  cursor: pointer;
+  align-items: left !important;
+`;
+
+const Engrenagem: any = styled.img`
+
+`;
 
 const Header: any = styled.div`
   text-align: center;
@@ -110,17 +132,21 @@ const Social: any = styled.div`
 const SocialContainer: any = styled.div`
   display:flex;
   flex-flow:row wrap;
-  justify-content: center;
+  justify-content: flex-start;
   padding:10px;
   width:auto;
   height:auto;
 `;
 
 const Container: any = styled.main`
-  padding: 100px 25% 40px 25%;
+  padding: 15% 0;
   background-color: #0d0d0d;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
-  width: auto;
+  width: 100%;
 `;
 
 const ContainerLogin: any = styled.div`
@@ -129,11 +155,10 @@ const ContainerLogin: any = styled.div`
   justify-content: flex-start;
   background-color: #222;
   text-align: center;
-  width: 370px;
   height: auto;
+  width: 370px;
   color:white;
-  padding: 0px 40px;
+  padding: 0px 5%;
 `;
-
 
 export default Login

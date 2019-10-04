@@ -3,7 +3,6 @@ import { NextPage } from 'next';
 import styled from '@emotion/styled';
 import Login from '../components/Login';
 import Link from 'next/link'
-import EngrenagemLogo from '../img/engrenagem.png';
 
 const IndexPage: NextPage = () => {
   return (
@@ -24,11 +23,6 @@ const IndexPage: NextPage = () => {
       <Politica>Politica de Privacidade</Politica>
       <Inscrever>Não tem uma conta Epic Games?<Link href="/registrar"><InscreverColor> Inscrever-se</InscreverColor></Link>ou <InscreverColor> Entrar mais tarde</InscreverColor></Inscrever>
       <Espaco></Espaco>
-      <Link href="/configuracoes">
-        <Configuracoes>
-          <Engrenagem src={EngrenagemLogo} alt="Configurações" width="20px"></Engrenagem>
-        </Configuracoes>
-      </Link>
     </Login >
   )
 }
@@ -36,18 +30,6 @@ const IndexPage: NextPage = () => {
 const Politica: any = styled.p`
   color: #EEEEEE;
   margin-top 12px;
-`;
-
-const Configuracoes: any = styled.div`
-  position: absolute;
-  top: 110%;
-  right: 95%;
-  color: white;
-  cursor: pointer;
-`;
-
-const Engrenagem: any = styled.img`
-
 `;
 
 const Inscrever: any = styled.p`
