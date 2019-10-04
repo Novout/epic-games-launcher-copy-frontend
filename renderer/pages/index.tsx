@@ -17,7 +17,7 @@ const IndexPage: NextPage = () => {
           <EsqueceuASenha>Esqueceu a senha</EsqueceuASenha>
         </LinhaAuxiliar>
       </Sessao>
-      <Link href="/loja">
+      <Link href="/inicio">
         <BotaoLogin>FAZER LOGIN AGORA</BotaoLogin>
       </Link>
       <Politica>Politica de Privacidade</Politica>
