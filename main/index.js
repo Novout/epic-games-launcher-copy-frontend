@@ -3,19 +3,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// Native
 const path_1 = require("path");
 const url_1 = require("url");
-// Packages
 const electron_1 = require("electron");
 const electron_is_dev_1 = __importDefault(require("electron-is-dev"));
 const electron_next_1 = __importDefault(require("electron-next"));
-// Prepare the renderer once the app is ready
 electron_1.app.on('ready', async () => {
     await electron_next_1.default('./renderer');
     const mainWindow = new electron_1.BrowserWindow({
-        width: 850,
-        height: 950,
+        width: 1050,
+        height: 890,
         webPreferences: {
             nodeIntegration: false,
             preload: path_1.join(__dirname, 'preload.js'),
@@ -30,9 +27,7 @@ electron_1.app.on('ready', async () => {
         });
     mainWindow.loadURL(url);
 });
-// Quit the app once all windows are closed
 electron_1.app.on('window-all-closed', electron_1.app.quit);
-// listen the channel `message` and resend the received message to the renderer process
 electron_1.ipcMain.on('message', (event, message) => {
     event.sender.send('message', message);
 });

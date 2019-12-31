@@ -20,9 +20,16 @@ const IndexPage: NextPage = () => {
       <Link href="/inicio">
         <BotaoLogin>FAZER LOGIN AGORA</BotaoLogin>
       </Link>
+      <EspacoCurto />
       <Politica>Politica de Privacidade</Politica>
-      <Inscrever>Não tem uma conta Epic Games?<Link href="/registrar"><InscreverColor> Inscrever-se</InscreverColor></Link>ou <InscreverColor> Entrar mais tarde</InscreverColor></Inscrever>
-      <Espaco></Espaco>
+      <Inscrever>Não tem uma conta Epic Games?
+        <Link href="/registrar">
+          <InscreverColor> Inscrever-se </InscreverColor>
+        </Link>
+        ou 
+        <InscreverColor> Entrar mais tarde</InscreverColor>
+      </Inscrever>
+      <Espaco />
     </Login >
   )
 }
@@ -69,8 +76,12 @@ const LinhaAuxiliar: any = styled.div`
 `;
 
 const Espaco: any = styled.div`
-  padding: 40px 0px;
+  padding: 25px 0px;
 `;
+
+const EspacoCurto: any = styled.div`
+  padding-top: 10px;
+`
 
 const LembrarTexto: any = styled.p`
   margin-bottom: 25px;

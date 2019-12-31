@@ -72,7 +72,10 @@ const Configuracoes: any = styled.div`
 `;
 
 const Engrenagem: any = styled.img`
-
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
 `;
 
 const Header: any = styled.div`
@@ -139,7 +142,7 @@ const SocialContainer: any = styled.div`
 `;
 
 const Container: any = styled.main`
-  padding: 15% 0;
+  padding: 15% 0 10% 0;
   background-color: #0d0d0d;
   min-width: 100%;
   display: flex;
