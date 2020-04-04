@@ -1,6 +1,6 @@
 {
-  "name": "electron-next-skeleton",
-  "productName": "ElectronTypescriptNext",
+  "name": "epic-games-launcher",
+  "productName": "Epic Launcher",
   "version": "1.0.0",
   "main": "main/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build-renderer": "next build renderer && next export renderer",
     "build-electron": "tsc -p electron-src",
     "build": "yarn build-renderer && yarn build-electron",
-    "dist": "npm run build && electron-builder --dir",
+    "dist": "yarn build && electron-builder --dir",
     "type-check": "tsc"
   },
   "build": {
