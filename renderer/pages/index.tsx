@@ -9,7 +9,8 @@ const IndexPage: NextPage = () => {
     <Login>
       <Sessao>
         <Titulo>INICIAR SESSÃO</Titulo>
-        <Email type="email" placeholder="Endereço de e-mail"></Email>
+        <Email type="email" placeholder="Nome de usuário ou e-mail">
+        </Email>
         <Senha type="password" placeholder="Senha"></Senha>
         <LinhaAuxiliar>
           <Lembrar type="checkbox"></Lembrar>
@@ -36,17 +37,19 @@ const IndexPage: NextPage = () => {
 
 const Politica: any = styled.p`
   color: #EEEEEE;
-  margin-top: 12px;
+  margin-top: 30px;
+  font-size: 0.85em;
 `;
 
 const Inscrever: any = styled.p`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 17px;
+  margin-top: 28px;
   margin-bottom: 2px;
   color: #777;
   font-style: bold;
+  font-size: 0.9em;
 `;
 
 const InscreverColor: any = styled.span`
@@ -57,12 +60,13 @@ const InscreverColor: any = styled.span`
 `;
 
 const BotaoLogin: any = styled.div`
-  padding: 15px 0px;
+  padding: 20px 0px;
   width: 333px;
   color: #666;
-  background: #111;
+  background: #181818;
   text-align: center;
   margin-left: 20px;
+  margin-top: 5px;
   font-size: 0.8em;
   cursor: pointer;
 `;
@@ -71,8 +75,11 @@ const LinhaAuxiliar: any = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-left: 23px;
-  margin-top: 3px;
+  align-items: center;
+  margin-left: 16px;
+  margin-top: 8px;
+  width: 85%;
+  font-size: 0.85em;
 `;
 
 const Espaco: any = styled.div`
@@ -84,7 +91,6 @@ const EspacoCurto: any = styled.div`
 `
 
 const LembrarTexto: any = styled.p`
-  margin-bottom: 25px;
   margin-left: 10px;
   color: #666;
   font-size: 0.9em;
@@ -94,7 +100,6 @@ const LembrarTexto: any = styled.p`
 
 const EsqueceuASenha: any = styled.p`
   margin-left: 110px;
-  margin-bottom: 25px;
   color: #666;
   font-size: 0.9em;
   font-style: bold;
@@ -102,6 +107,7 @@ const EsqueceuASenha: any = styled.p`
 `;
 
 const Email: any = styled.input`
+  font-family: 'BrutalType', 'Roboto', 'sans-serif';
   background-color: #333;
   padding: 16px;
   border: none;
@@ -112,24 +118,23 @@ const Email: any = styled.input`
   outline: none;
 `;
 
-const Lembrar: any = styled.input`
-  margin-top: 10px;
-  margin-left: -4px;
-  width: 20px;
-  height: 20px;
-  background: #111;
-  color: #111;
-  cursor: pointer;
-`;
-
 const Senha: any = styled.input`
+  font-family: 'BrutalType', 'Roboto', 'sans-serif';
   background-color: #333;
   padding: 16px;
   border: none;
   width: 305px;
   color: white;
-  margin-left: 19px;
+  margin-left: 20px;
   outline: none;
+`;
+
+const Lembrar: any = styled.input`
+  width: 20px;
+  height: 20px;
+  background: #111;
+  color: #111;
+  cursor: pointer;
 `;
 
 const Sessao: any = styled.div`
@@ -147,6 +152,8 @@ const Titulo: any = styled.p`
   font-style: bold;
   text-align: left;
   margin-left: 20px;
+  transform: translateY(-10px);
+  margin-bottom: 5px;
 `;
 
 export default IndexPage;

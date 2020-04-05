@@ -61,7 +61,7 @@ const Login: React.FunctionComponent = ({
   );
 
 const Configuracoes: any = styled.div`
-  transform: translateY(160px);
+  transform: translateY(170px);
   grid-area: 11 / 2 / 12 / 3;
   color: white;
   cursor: pointer;
@@ -79,7 +79,7 @@ const Header: any = styled.div`
 `;
 
 const Logo: any = styled.img`
-  margin-top: 60px;
+  margin-top: 35px;
   padding-bottom: 10px;
 `;
 
@@ -129,12 +129,15 @@ const Social: any = styled.div`
 `;
 
 const SocialContainer: any = styled.div`
-  display:flex;
-  flex-flow:row wrap;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: flex-start;
-  padding:10px;
-  width:auto;
-  height:auto;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 15px;
 `;
 
 const Container: any = styled.main`
@@ -142,10 +145,10 @@ const Container: any = styled.main`
   grid-template-rows: repeat(12, 1fr);
   grid-template-columns: repeat(24, 1fr);
   height: 100vh;
-  background-color: #0d0d0d;
+  background-color: #111111;
   min-width: 100%;
   height: auto;
-  padding-bottom: 90px;
+  padding-bottom: 85px;
   overflow: hidden;
 `;
 
@@ -154,12 +157,13 @@ const ContainerLogin: any = styled.div`
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
+  align-items: center;
   background-color: #222;
   text-align: center;
   height: auto;
   width: 400px;
   color: white;
-  padding: 0px 5%;
+  padding: 0px 6%;
 `;
 
 export default Login;
