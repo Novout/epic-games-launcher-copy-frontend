@@ -200,4 +200,4 @@ const Side = styled.div`
   width: auto;
 `;
 
-export default Sidebar
+export default Sidebar;

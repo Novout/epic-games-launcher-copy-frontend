@@ -145,7 +145,7 @@ const Container: any = styled.main`
   background-color: #0d0d0d;
   min-width: 100%;
   height: auto;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
   overflow: hidden;
 `;
 
@@ -162,4 +162,4 @@ const ContainerLogin: any = styled.div`
   padding: 0px 5%;
 `;
 
-export default Login
+export default Login;
