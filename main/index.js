@@ -29,6 +29,8 @@ electron_1.app.on('ready', async () => {
 
   mainWindow.setMenuBarVisibility(false);
 
+  mainWindow.setResizable(false);
+
   mainWindow.loadURL(url);
 });
 

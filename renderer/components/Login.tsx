@@ -61,7 +61,7 @@ const Login: React.FunctionComponent = ({
   );
 
 const Configuracoes: any = styled.div`
-  transform: translateY(170px);
+  transform: translateY(135px);
   grid-area: 11 / 2 / 12 / 3;
   color: white;
   cursor: pointer;
@@ -148,7 +148,7 @@ const Container: any = styled.main`
   background-color: #111111;
   min-width: 100%;
   height: auto;
-  padding-bottom: 85px;
+  padding-bottom: 43px;
   overflow: hidden;
 `;
 
