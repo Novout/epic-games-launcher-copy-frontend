@@ -1,7 +1,7 @@
 # Epic Games Launcher Copy
 ![](https://img.shields.io/badge/Electron-6-green) ![](https://img.shields.io/badge/React-16.9-blue) ![](https://img.shields.io/badge/NextJS-9-purple) ![](https://img.shields.io/badge/Typescript-3.6-brightgreen)
 
-![](https://i.imgur.com/HE6XAHI.png)
+![](https://i.imgur.com/cY9htWW.png)
 ## How to use
 
 To install and start dev build:
