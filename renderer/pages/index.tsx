@@ -73,12 +73,12 @@ const BotaoLogin: any = styled.div`
 
 const LinhaAuxiliar: any = styled.div`
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   margin-left: 16px;
   margin-top: 8px;
-  width: 85%;
+  width: 95%;
   font-size: 0.85em;
 `;
 
