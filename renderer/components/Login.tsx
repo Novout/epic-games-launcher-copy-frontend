@@ -148,7 +148,7 @@ const Container: any = styled.main`
   background-color: #111111;
   min-width: 100%;
   height: auto;
-  padding-bottom: 43px;
+  padding-bottom: 59px;
   overflow: hidden;
 `;
 
