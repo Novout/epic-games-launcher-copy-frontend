@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Link from 'next/link';
-//import Head from 'next/head';
 import styled from '@emotion/styled';
 import EpicGamesLogo from '../img/epiclogo.png';
 import HomeLogo from '../img/home.png';
 
 const Sidebar: React.FunctionComponent = ({
+
 }) => (
     <Side>
       <ContentSide>

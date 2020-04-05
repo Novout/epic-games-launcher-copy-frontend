@@ -16,6 +16,7 @@ const Login: React.FunctionComponent = ({
     <Container>
       <Head>
         <meta charSet="utf-8" />
+        <meta httpEquiv="Content-Security-Policy" content="script-src 'self';"></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <ContainerLogin>
@@ -60,7 +61,7 @@ const Login: React.FunctionComponent = ({
   );
 
 const Configuracoes: any = styled.div`
-  transform: translateY(165px);
+  transform: translateY(160px);
   grid-area: 11 / 2 / 12 / 3;
   color: white;
   cursor: pointer;
@@ -144,7 +145,8 @@ const Container: any = styled.main`
   background-color: #0d0d0d;
   min-width: 100%;
   height: auto;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
+  overflow: hidden;
 `;
 
 const ContainerLogin: any = styled.div`

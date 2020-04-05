@@ -27,9 +27,7 @@ electron_1.app.on('ready', async () => {
       slashes: true,
     });
 
-  if(!process.env.NODE_ENV === 'development') {
-    mainWindow.setMenuBarVisibility(false);
-  }
+  mainWindow.setMenuBarVisibility(false);
 
   mainWindow.loadURL(url);
 });
