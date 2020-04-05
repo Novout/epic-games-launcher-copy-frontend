@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NextPage } from 'next';
 import styled from '@emotion/styled';
 import Login from '../components/Login';
-import Link from 'next/link'
+import Link from 'next/link';
 
 const IndexPage: NextPage = () => {
   return (
@@ -36,7 +36,7 @@ const IndexPage: NextPage = () => {
 
 const Politica: any = styled.p`
   color: #EEEEEE;
-  margin-top 12px;
+  margin-top: 12px;
 `;
 
 const Inscrever: any = styled.p`
@@ -53,7 +53,7 @@ const InscreverColor: any = styled.span`
   color: #EEEEEE;
   font-style: bold;
   margin: 0px 5px;
-  cursor: pointer
+  cursor: pointer;
 `;
 
 const BotaoLogin: any = styled.div`
@@ -109,6 +109,7 @@ const Email: any = styled.input`
   color: white;
   margin-bottom: 18px;
   margin-left: 20px;
+  outline: none;
 `;
 
 const Lembrar: any = styled.input`
@@ -128,6 +129,7 @@ const Senha: any = styled.input`
   width: 305px;
   color: white;
   margin-left: 19px;
+  outline: none;
 `;
 
 const Sessao: any = styled.div`
@@ -147,4 +149,4 @@ const Titulo: any = styled.p`
   margin-left: 20px;
 `;
 
-export default IndexPage
+export default IndexPage;

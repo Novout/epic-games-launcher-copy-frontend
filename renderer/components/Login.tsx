@@ -53,22 +53,17 @@ const Login: React.FunctionComponent = ({
       </ContainerLogin>
       <Link href="/configuracoes">
         <Configuracoes>
-          <Engrenagem src={EngrenagemLogo} alt="Configurações" width="20px"></Engrenagem>
+          <Engrenagem src={EngrenagemLogo} alt="Configurações" width="15px"></Engrenagem>
         </Configuracoes>
       </Link>
     </Container>
   );
 
 const Configuracoes: any = styled.div`
-  position: absolute;
-  top: 95%;
-  left: 5%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  transform: translateY(165px);
+  grid-area: 11 / 2 / 12 / 3;
   color: white;
   cursor: pointer;
-  align-items: left !important;
 `;
 
 const Engrenagem: any = styled.img`
@@ -142,25 +137,26 @@ const SocialContainer: any = styled.div`
 `;
 
 const Container: any = styled.main`
-  padding: 15% 0 10% 0;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(24, 1fr);
+  height: 100vh;
   background-color: #0d0d0d;
   min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: auto;
-  width: 100%;
+  padding-bottom: 90px;
 `;
 
 const ContainerLogin: any = styled.div`
+  grid-area: 3 / 8 / 12 / 18;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   background-color: #222;
   text-align: center;
   height: auto;
-  width: 370px;
-  color:white;
+  width: 400px;
+  color: white;
   padding: 0px 5%;
 `;
 

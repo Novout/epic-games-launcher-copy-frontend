@@ -21,30 +21,30 @@
     ]
   },
   "devDependencies": {
-    "@types/next": "8.0.6",
-    "@types/node": "^11.13.9",
-    "@types/react": "^16.8.15",
-    "@types/react-dom": "^16.0.11",
-    "electron": "^6.0.2",
-    "electron-builder": "^21.2.0",
-    "next": "latest",
-    "typescript": "^3.5.3"
+    "@types/next": "^9.0.0",
+    "@types/node": "^13.11.0",
+    "@types/react": "^16.9.32",
+    "@types/react-dom": "^16.9.6",
+    "electron": "^8.2.0",
+    "electron-builder": "^22.4.1",
+    "next": "^9.3.4",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.17",
-    "@emotion/styled": "^10.0.17",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
     "add": "^2.0.6",
-    "babel-plugin-styled-components": "^1.10.6",
-    "electron-is-dev": "^1.0.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-is-dev": "^1.1.0",
     "electron-next": "^3.1.5",
-    "emotion": "^10.0.17",
+    "emotion": "^10.0.27",
     "font-awesome": "^4.7.0",
-    "formik": "^1.5.8",
     "global": "^4.4.0",
-    "next-images": "^1.2.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "styled-components": "^4.3.2",
+    "next-images": "^1.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1",
     "topcoat": "^0.7.5"
   }
 }

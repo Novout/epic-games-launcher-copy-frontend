@@ -98,7 +98,6 @@ const ProblemasTexto: any = styled.span`
   color: #AAA;
 `;
 
-
 const Proxy: any = styled.div`
   margin: 30px 0px -10px 0px;
   padding-top: 40px;
@@ -152,85 +151,79 @@ const IdiomaSelect: any = styled.select`
 `;
 
 const IdiomaTexto: any = styled.p`
-      color: #DDD;
-      font-size: 0.95em;
-    `;
+  color: #DDD;
+  font-size: 0.95em;
+`;
 
 const Idioma: any = styled.div`
-      grid-area: idioma / first / proxy / first;
-      padding: 10px 0px;
-      margin-bottom: 30px;
-    `;
+  grid-area: idioma / first / proxy / first;
+  padding: 10px 0px;
+  margin-bottom: 30px;
+`;
 
 const ContainerConteudo: any = styled.div`
-      display: flex;
-      flex-flow: column wrap;
-      padding-left: 35px;
-    
-      grid-area: idioma / first / fim / first;
-    
-      overflow: auto;
-    `;
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 35px;
+  grid-area: idioma / first / fim / first;
+  overflow: auto;
+`;
 
 
 const ConfigLetra: any = styled.p`
-      float: left;
-      color: #999999;
-      margin-left: 20px;
-      margin-top: 21px;
-    
-      justify-self: start;
-    
-      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto
-      ,"Helvetica Neue",Arial,"Noto Sans"
-      ,sans-serif,"Apple Color Emoji","Segoe UI Emoji"
-      ,"Segoe UI Symbol","Noto Color Emoji";
-    
-      font-style: bold;
-    
+  float: left;
+  color: #999999;
+  margin-left: 20px;
+  margin-top: 21px;
+  justify-self: start;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto
+  ,"Helvetica Neue",Arial,"Noto Sans"
+  ,sans-serif,"Apple Color Emoji","Segoe UI Emoji"
+  ,"Segoe UI Symbol","Noto Color Emoji";
+  font-style: bold;
+
   &:hover {
-        color: white;
-    }
-  `;
+    color: white;
+  }
+`;
 
 const Seta: any = styled.p`
-    float: left;
-    border-right: 1.5px solid #555;
-    margin-left: 20px;
-    padding-right: 15px;
-    color: #AAAAAA;
-    padding-top: 5px;
-  
-    justify-self: start;
-  
+  float: left;
+  border-right: 1.5px solid #555;
+  margin-left: 20px;
+  padding-right: 15px;
+  color: #AAAAAA;
+  padding-top: 5px;
+  justify-self: start;
+
   &:hover {
-        color: white;
-    }
-  `;
+    color: white;
+  }
+`;
 
 const Config: any = styled.div`
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-  
-    grid-area: config / first / idioma / first;
-  
-    border-bottom:1.4px solid #555;
-  
-    padding-top: 7px;
-  
-    cursor: pointer;
-  
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+  grid-area: config / first / idioma / first;
+
+  border-bottom:1.4px solid #555;
+
+  padding-top: 7px;
+
+  cursor: pointer;
+
+  &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
 `;
 
 const Container: any = styled.main`
-    display: grid;
-    grid-template-columns: [first] auto;
-    grid-template-rows: [config] 75px [idioma] 200px [proxy] 210px [problemas] 155px [footer] 50px [fim];
-    background: #222;
+  display: grid;
+  grid-template-columns: [first] auto;
+  grid-template-rows: [config] 75px [idioma] 200px [proxy] 210px [problemas] 155px [footer] 50px [fim];
+  background: #222;
 `;
 
 export default Loja;

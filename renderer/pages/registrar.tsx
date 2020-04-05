@@ -107,7 +107,7 @@ const Inputs: any = styled.input`
   border: none;
   color: white;
   margin-left: 17px;
-  margin-top 15px;
+  margin-top: 15px;
   margin-right: 8px;
   background: #333;
 `;
@@ -118,7 +118,7 @@ const InputNome: any = styled.input`
   border: none;
   color: white;
   margin-left: 5px;
-  margin-top 15px;
+  margin-top: 15px;
   margin-right: 8px;
   background: #333;
 `;
@@ -160,4 +160,4 @@ const Inscrever: any = styled.p`
   font-size: 0.75em;
 `;
 
-export default Loja
+export default Loja;
